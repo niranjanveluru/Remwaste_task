@@ -1,0 +1,22 @@
+{
+  "name": "remwaste_task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niranjanveluru/Remwaste_task.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niranjanveluru/Remwaste_task/issues"
+  },
+  "homepage": "https://github.com/niranjanveluru/Remwaste_task#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.54.1",
+    "@types/node": "^24.1.0"
+  }
+}
