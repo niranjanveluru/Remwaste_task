@@ -4,38 +4,35 @@ This repository contains API and UI tests developed using React app + node js ba
 
 ---
 
-## Install Playwright
+## Install Tools & Dependencies
 
 npm init playwright@latest
 npm install luxon 
 npm install -g newman 
 
-
-
-
-### Test Files
+## Test Files
 
 - `login.spec.ts` – Test cases for login functionality 
 - `dashboard.spec.ts` – Test cases for add / modify / delete items
+- `CRUD_APP.postman_environment.json` - Postman environment settings
+- `QA_Tests.postman_collection.json` - Postman collection of api tests
 
----
+##  Run Tests
 
-####  Run Tests
-
-To Run Playwright Tests :
+### To Run Playwright Tests :
 
 npx playwright test login.spec.ts --headed ( headed )
 npx playwright test dashboard.spec.ts  ( headless )
 
-To Run Newman API Tests in powershell :
+### To Run Newman API Tests in powershell :
 
 & "C:\Users\<username>\AppData\Roaming\npm\newman.cmd" run QA_Tests.postman_collection.json -e CRUD_APP.postman_environment.json --delay-request 100 --reporters cli,json  --reporter-json-export newman-report.json
 
-To Run Newman API Tests in bash :
+### To Run Newman API Tests in bash :
 
 newman run QA_Tests.postman_collection.json -e CRUD_APP.postman_environment.json --delay-request 100 --reporters cli,json --reporter-json-export newman-report.json
 
-#####  Test Reporting
+##  Test Reporting
 
 npx playwright show-report - To see default playwright report
 newman-run-report-<timestamp>.json - will be generated ./API-tests/newman
